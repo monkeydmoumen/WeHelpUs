@@ -45,4 +45,15 @@ hr {
 .shadow {
     text-shadow: 5px -2px 5px rgba(0, 0, 0, 0.140),
         -5px 2px 10px rgba(0, 0, 0, 0.140);
+
+}
+
+.bxshadow {
+    box-shadow: 0px 10px 10px rgba(7, 1, 1, 0.116),
+        -5px 8px 10px rgba(0, 0, 0, 0.082);
+}
+
+.bxshadowdw {
+    box-shadow: 0px -10px 10px rgba(7, 1, 1, 0.068),
+        -5px -8px 10px rgba(0, 0, 0, 0.082);
 }
