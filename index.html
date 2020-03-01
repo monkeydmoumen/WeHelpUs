@@ -16,6 +16,12 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link rel="stylesheet" href="stylehome.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/flipdown/flipdown.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
 
 <body class="bg-light ">
   <nav class="bg-light">
@@ -23,7 +29,8 @@
       <div class="row">
         <div class="col-md-12 bg-light" id="TAK">
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand " href="#"><i class="fa fa-camera-retro fa-lg"></i> HelpEarth</a>
+            <a class="navbar-brand " href="#"><i class="fa fa-handshake-o" aria-hidden="true"></i>
+              WeHelpUs</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -33,16 +40,16 @@
                 <li class="nav-item active border-dark border-top">
                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About </a>
-                </li>
+
                 <li class="nav-item">
                   <a class="nav-link" href="#">Contact </a>
                 </li>
-                <ul class="navbar-nav ml-auto"></ul>
-                <li class="nav-item"><a class="nav-link" href="">Sign Up</a></li>
-                <li class="nav-item"><a class="nav-link" href="">Sign in</a></li>
               </ul>
+              <form class="form-inline ml-auto p-2">
+                <input class="form-control mr-sm-2" type="search" placeholder="@" aria-label="Search">
+                <input class="form-control mr-sm-2" type="password" placeholder="password" aria-label="Search">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Login</button>
+              </form>
             </div>
           </nav>
         </div>
@@ -60,13 +67,8 @@
             not
             every man's greed.”</p>
           <hr class="animated flash">
-          <a href="#" class="cta">
-            <span>Click me</span>
-            <svg width="13px" height="10px" viewBox="0 0 13 10">
-              <path d="M1,5 L11,5"></path>
-              <polyline points="8 1 12 5 8 9"></polyline>
-            </svg>
-          </a> <br>
+          <a href="#" class="btn btn-outline-dark animated flash">Sign Up</a>
+          <br>
           <br>
         </div>
       </div>
@@ -75,10 +77,20 @@
   <br>
   <br class="bxshadow">
   <!---------------------------------------------------count-down------------------------------------------------------>
-
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h1>Our Next Event :</h1>
+        <small class="biggiesmalls">in two day in sfax</small>
+        <div id="timer">
+          <div id="flipdown" class="flipdown"></div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!--------------------------------------------------places-------------------------------------------------------->
   <div class="d-flex flex-row  justify-content-around flex-wrap">
-    <div class="m-1 ">
+    <div class="mx-1 ">
       <div class="card border border-success rounded bxshadow" style="width: 18rem;">
         <img class="card-img-top" src="img2.jpg" alt="Card image cap">
         <div class="card-body">
@@ -92,7 +104,7 @@
       </div>
       <br>
     </div>
-    <div class="m-1 ">
+    <div class="mx-1 ">
       <div class="card border border-success rounded bxshadow" style="width: 18rem;">
         <img class="card-img-top" src="img3.jpg" alt="Card image cap">
         <div class="card-body">
@@ -107,7 +119,7 @@
         </div>
       </div>
     </div>
-    <div class="m-1 ">
+    <div class="mx-1">
       <div class="card border border-success rounded bxshadow" style="width: 18rem;">
         <img class="card-img-top border" src="img1.jpg" alt="Card image cap">
         <div class="card-body">
@@ -126,7 +138,7 @@
   <br>
   <!-- Footer -->
   <!-- Footer -->
-  <footer class="page-footer font-small pt-4 bxshadowdw" id="TAK">
+  <!-- <footer class="page-footer font-small pt-4 bxshadowdw" id="TAK">
     <div class="container-fluid text-center text-md-left">
       <div class="row">
         <div class="col-md-6 mt-md-0 mt-3">
@@ -138,22 +150,32 @@
         </div>
         <hr class="clearfix w-100 d-md-none pb-3">
         <div class="col-md-6 mb-md-0 mb-3">
-          <h5 class="text-uppercase font-weight-bold">Footer text 2</h5>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt fuga perferendis modi earum
-            commodi aperiam temporibus quod nulla nesciunt aliquid debitis ullam omnis quos ipsam, aspernatur id
-            excepturi hic.</p>
+          <h5 class="text-uppercase font-weight-bold"> Social Media</h5>
+          <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Facebook"> <i
+              style="font-size: 300%; margin: 5px;" class="fa fa-facebook-official" aria-hidden="true"></>
+          </span>
+          <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title=" Instagram"> <i
+              style="font-size: 300%; margin: 5px;" class="fa fa-instagram" aria-hidden="true"></i>
+          </span>
+          <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Twitter"> <i
+              style="font-size: 300%; margin: 5px;" class="fa fa-twitter" aria-hidden="true"></i>
+          </span>
+          <div class="input-group mb-3" style="margin-top: 13px;">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Newsletter</span>
+            </div>
+            <input type="text" class="form-control" placeholder="name@domain.com" aria-label="Username"
+              aria-describedby="basic-addon1">
+          </div>
         </div>
       </div>
     </div>
-    <!-- Copyright -->
+
     <div class="footer-copyright text-center py-3">© 2020 Copyright:
       <a href=""> WeHelpUS.com </a>
     </div>
-    <!-- Copyright -->
 
   </footer>
-  <!-- Footer -->
-  <!-- Footer -->
 
   <!--------------------------------------------------footer-------------------------------------------------------->
 
@@ -166,6 +188,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
   </script>
+  <script src="scripthome.js"></script>
+  <script type="text/javascript" src="js/flipdown/flipdown.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
