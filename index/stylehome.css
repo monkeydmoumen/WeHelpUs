@@ -60,9 +60,10 @@ hr {
 
 #timer {
     margin-left: 55%;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 
-.biggiesmalls {
-    margin-top: -20px;
+span i {
+    margin-right: 20px;
 }
+
