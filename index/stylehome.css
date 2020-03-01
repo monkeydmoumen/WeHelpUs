@@ -2,6 +2,20 @@ html {
     height: 100%;
 }
 
+main {
+    height: 320px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 46%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+
+}
+
+footer {
+    height: 320px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+    clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 100%);
+
+}
+
 main,
 nav,
 #TAK {
@@ -53,6 +67,14 @@ hr {
         -5px 8px 10px rgba(0, 0, 0, 0.082);
 }
 
+#curv {
+    margin-left: 5%;
+    float: center;
+    max-width: 90%;
+    height: auto;
+    z-index: 0;
+}
+
 .bxshadowdw {
     box-shadow: 0px -10px 10px rgba(7, 1, 1, 0.068),
         -5px -8px 10px rgba(0, 0, 0, 0.082);
@@ -67,6 +89,18 @@ span i {
     margin-right: 20px;
 }
 
+span i:hover {
+    color: white;
+}
+
 a {
     color: black;
+}
+
+svg {
+    width: 100%;
+}
+
+.bggr {
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
 }
